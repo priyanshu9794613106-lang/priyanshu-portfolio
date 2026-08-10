@@ -1,0 +1,109 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+}
+
+header{
+  background:#1e293b;
+  padding:15px 50px;
+  position:sticky;
+  top:0;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+}
+
+nav ul li{
+  margin-left:20px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+}
+
+.hero{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  padding:80px 50px;
+}
+
+.hero-text h1{
+  font-size:45px;
+}
+
+.hero-text span{
+  color:#38bdf8;
+}
+
+.hero-text p{
+  margin:20px 0;
+}
+
+button{
+  background:#38bdf8;
+  color:white;
+  border:none;
+  padding:12px 25px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.hero-img img{
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  border:5px solid #38bdf8;
+}
+
+section{
+  padding:60px 50px;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.skills-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+.skill{
+  background:#1e293b;
+  padding:15px 25px;
+  border-radius:10px;
+}
+
+.project-card{
+  background:#1e293b;
+  padding:20px;
+  border-radius:10px;
+  margin:20px auto;
+  max-width:600px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#1e293b;
+}
