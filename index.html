@@ -3,60 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Priyanshu Mishra | Portfolio</title>
-
-  <meta name="description" content="Official portfolio of Priyanshu Mishra, B.Tech CSE student, web developer, and aspiring software developer.">
-
+  <meta name="description" content="Official portfolio of Priyanshu Mishra, B.Tech CSE student and aspiring software developer.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="navbar">
-  <div class="logo">Priyanshu Mishra</div>
+  <header class="navbar">
+    <div class="logo">Priyanshu Mishra</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#resume">Resume</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Priyanshu Mishra</span></h1>
+      <p>B.Tech (Computer Science & Engineering) | Web Developer | Aspiring Software Engineer</p>
 
-<section id="home" class="hero">
-
-  <div class="hero-text">
-
-    <h1>Hello, I'm <span>Priyanshu Mishra</span></h1>
-
-    <p>B.Tech (Computer Science & Engineering) | Aspiring Software Developer</p>
-
-    <div class="buttons">
-      <a href="#resume" class="btn">View Resume</a>
-      <a href="#contact" class="btn secondary">Contact Me</a>
+      <div class="buttons">
+        <a href="#resume" class="btn">View Resume</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
     </div>
 
-  </div>
+    <div class="hero-image">
+      <img src="profile.jpg" alt="Priyanshu Mishra">
+    </div>
+  </section>
 
-  <div class="hero-image">
-    <img src="profile.jpg" alt="Priyanshu Mishra">
-  </div>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I am Priyanshu Mishra, a B.Tech CSE 2nd-year student at IEC College of Engineering & Technology,
+      Greater Noida. I am passionate about web development, software development, and creating innovative
+      digital experiences.
+    </p>
+  </section>
 
-</section>
+  <section id="skills" class="section">
+    <h2>Technical Skills</h2>
 
-<section id="about" class="section">
+    <div class="skills-grid">
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">C Programming</div>
+      <div class="skill-card">Git & GitHub</div>
+      <div class="skill-card">Responsive Web Design</div>
+      <div class="skill-card">Portfolio Website Development</div>
+    </div>
+  </section>
 
-  <h2>About Me</h2>
+  <section id="resume" class="section">
+    <h2>Resume</h2>
 
-  <p>
-    I am Priyanshu Mishra, a B.Tech CSE 2nd-year student at IEC College of Engineering & Technology, Greater Noida.
-    I am passionate about web development, software development, and building creative technology projects.
-  </p>
+    <p>
+      Download my professional resume and explore my education, technical skills,
+      internship experience, and projects.
+    </p>
 
-</section>
+    <div style="text-align:center;margin-top:30px;">
+      <a href="Priyanshu_Mishra_Resume.pdf" download class="btn">
+        Download Resume (PDF)
+      </a>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <section id="contact" class="section">
+    <h2>Connect With Me</h2>
 
+    <div class="contact-grid">
+
+      <a class="contact-card"
+         href="mailto:priyanshu9794613106@gmail.com">
+        📧
+        <h3>Email</h3>
+        <p>priyanshu9794613106@gmail.com</p>
+      </a>
+
+      <a class="contact-card"
+         href="https://wa.me/919794613106"
+         target="_blank">
+        📱
+        <h3>WhatsApp</h3>
+        <p>+91 9794613106</p>
+      </a>
+
+      <a class="contact-card"
+         href="https://instagram.com/shiva_mishra3106"
+         target="_blank">
+        📷
+        <h3>Instagram</h3>
+        <p>@shiva_mishra3106</p>
+      </a>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Priyanshu Mishra | Designed & Developed by Priyanshu Mishra</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
