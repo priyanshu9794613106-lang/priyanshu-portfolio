@@ -5,8 +5,12 @@
     font-family:'Segoe UI',sans-serif;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    background:#07111f;
+    background:linear-gradient(135deg,#07111f,#0b1f36,#07111f);
     color:white;
     overflow-x:hidden;
 }
@@ -20,12 +24,13 @@ body{
     align-items:center;
     padding:18px 8%;
     background:rgba(7,17,31,0.75);
-    backdrop-filter:blur(12px);
+    backdrop-filter:blur(14px);
     z-index:1000;
+    border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
 .logo{
-    font-size:26px;
+    font-size:28px;
     font-weight:700;
     color:#38bdf8;
 }
@@ -35,6 +40,7 @@ nav a{
     text-decoration:none;
     margin-left:28px;
     transition:0.3s;
+    font-weight:500;
 }
 
 nav a:hover{
@@ -55,7 +61,7 @@ nav a:hover{
 }
 
 .hero-text h1{
-    font-size:58px;
+    font-size:64px;
     line-height:1.1;
     margin-bottom:18px;
 }
@@ -88,7 +94,8 @@ nav a:hover{
 }
 
 .btn:hover{
-    transform:translateY(-3px);
+    transform:translateY(-4px);
+    box-shadow:0 12px 28px rgba(56,189,248,0.35);
 }
 
 .btn.secondary{
@@ -104,12 +111,22 @@ nav a:hover{
 }
 
 .hero-image img{
-    width:340px;
-    height:340px;
+    width:360px;
+    height:360px;
     object-fit:cover;
     border-radius:50%;
     border:6px solid #38bdf8;
-    box-shadow:0 0 40px rgba(56,189,248,0.35);
+    box-shadow:0 0 50px rgba(56,189,248,0.35);
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-12px);
+    }
 }
 
 .section{
@@ -132,26 +149,6 @@ nav a:hover{
     font-size:18px;
 }
 
-@media(max-width:900px){
-    .hero{
-        flex-direction:column-reverse;
-        text-align:center;
-        padding-top:120px;
-    }
-
-    .hero-text h1{
-        font-size:42px;
-    }
-
-    nav{
-        display:none;
-    }
-
-    .hero-image img{
-        width:260px;
-        height:260px;
-    }
-}
 .skills-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
@@ -209,4 +206,25 @@ nav a:hover{
     color:#94a3b8;
     border-top:1px solid rgba(255,255,255,0.08);
     margin-top:40px;
+}
+
+@media(max-width:900px){
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding-top:120px;
+    }
+
+    .hero-text h1{
+        font-size:42px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .hero-image img{
+        width:260px;
+        height:260px;
+    }
 }
